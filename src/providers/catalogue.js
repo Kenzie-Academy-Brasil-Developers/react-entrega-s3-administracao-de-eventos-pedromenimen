@@ -23,7 +23,7 @@ export const CatalogueProvider = ({ children }) => {
   };
   const removeFromEvent = (event, setEvent, drink) => {
     const newList = event.filter((selected) => selected.id !== drink.id);
-    setEvent(newList);
+    return setEvent(newList);
   };
   return (
     <CatalogueContext.Provider

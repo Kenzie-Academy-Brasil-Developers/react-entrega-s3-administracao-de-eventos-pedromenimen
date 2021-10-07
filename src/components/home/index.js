@@ -6,10 +6,10 @@ const Home = () => {
   return (
     <div className="HomeContainer">
       <header className="HomeHeader">
-        <div>
-          <h1 onClick={() => history.push("/drinks")}>Bebidas</h1>
+        <div onClick={() => history.push("/drinks")}>
+          <h1>Bebidas</h1>
         </div>
-        <div>
+        <div onClick={() => history.push("/events")}>
           <h1>Eventos</h1>
         </div>
       </header>
